@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery Form for Programming interest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="title">Programming Survey form</h1>
+        <p id="description">Thank you for taking the time to help us about Programming interest</p>
+        <form action="" id="form">
+            <h3>Name</h3>
+            <input type="text" placeholder="Enter your name" id="text">
+            <h3>Email</h3>
+            <input type="email" name="" id="email" placeholder="Enter your email">
+            <h3>Age(optional)</h3>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            <h3>Your Current Role</h3>
+            <select id="dropdown" name="role" class="form-control" required="" style="margin-left: 20px;">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <h3>Would you like you Programming?</h3>
+            <label for="">
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely
+            </label>
+            <label for="">
+                <input name="user-recommend" value="Maybe" type="radio" class="input-radio" checked="">Maybe
+            </label>
+            <label for="">
+                <input name="user-recommend" value="Not Sure" type="radio" class="input-radio" checked="">Not Sure
+            </label>
+            <h3>Which Programming language you want to learn?</h3>
+            <input type="checkbox" name="" id="interest"><span>Python</span>
+            <input type="checkbox" name="" id="interest"><span>C</span>
+            <input type="checkbox" name="" id="interest"><span>C++</span>
+            <input type="checkbox" name="" id="interest"><span>Typescript</span>
+            <input type="checkbox" name="" id="interest"><span>Java</span>
+            <input type="checkbox" name="" id="interest"><span>Kotlin</span>
+            <h3>Any Suggestions from you?</h3>
+            <input type="text" id="textarea" placeholder="Enter your suggestions">
+            <button type="submit" id="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
